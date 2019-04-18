@@ -24,6 +24,8 @@
         app:srcTopLeft="@drawable/flower"
         app:srcTopRight="@drawable/flower"
         app:srcBottomLeft="@drawable/flower"
-        app:srcBottomRight="@drawable/flower"/>
+        android:layout_margin="16dp"
+        app:srcBottomRight="@drawable/flower"
+        app:text="Концерты декабря"/>
 
 </LinearLayout>
