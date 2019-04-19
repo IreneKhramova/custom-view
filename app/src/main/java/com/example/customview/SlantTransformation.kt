@@ -39,9 +39,6 @@ class SlantTransformation(
     }
 
     override fun transform(pool: BitmapPool, toTransform: Bitmap, outWidth: Int, outHeight: Int): Bitmap {
-        if (toTransform.width == outWidth && toTransform.height == outHeight) {
-            return toTransform
-        }
         val slantValuePx = SLANT_VALUE.dpToPx()
         val slantHalfValuePx = SLANT_VALUE.dpToPx() / 2
         val width = outWidth.toFloat()
