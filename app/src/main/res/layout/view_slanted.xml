@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <com.example.customview.ImageContainer
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewImageContainer"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/textViewCaption"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewCaption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/viewImageContainer"
+            tools:text="Чем заняться на каникулах"
+            android:ellipsize="end"
+            app:layout_constraintWidth_max="wrap"
+            app:layout_constraintWidth_percent="0.7"
+            android:textSize="30sp"/>
+
+</merge>

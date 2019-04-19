@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android"
-       xmlns:app="http://schemas.android.com/apk/res-auto"
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
        xmlns:tools="http://schemas.android.com/tools"
        android:layout_width="match_parent"
-       android:layout_height="match_parent"
+       android:layout_height="wrap_content"
        tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -37,8 +36,6 @@
             android:layout_weight="1"
             android:scaleType="fitEnd"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="@id/textViewCaption"
             app:layout_constraintDimensionRatio="H,1:1"
             app:layout_constraintEnd_toStartOf="@id/imageViewBottomRight"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,21 +52,5 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/imageViewBottomLeft"
             app:layout_constraintTop_toBottomOf="@id/imageViewTopRight"/>
-
-    <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textViewCaption"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:maxLines="2"
-            android:fontFamily="sans-serif-medium"
-            android:textColor="@android:color/black"
-            android:layout_marginStart="24dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="@id/imageViewBottomLeft"
-            tools:text="Чем заняться на каникулах"
-            android:ellipsize="end"
-            app:layout_constraintWidth_max="wrap"
-            app:layout_constraintWidth_percent="0.6"
-            android:textSize="28sp"/>
 
 </merge>
