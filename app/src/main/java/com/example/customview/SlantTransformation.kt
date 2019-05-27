@@ -18,7 +18,7 @@ class SlantTransformation(
 ) : BitmapTransformation() {
 
     companion object {
-        private const val ID = "com.bumptech.glide.transformations.FillSpace"
+        private const val ID = "com.bumptech.glide.transformations.Slant"
         private val ID_BYTES = ID.toByteArray(Charset.forName("UTF-8"))
         private const val INT_SIZE_IN_BYTES = 4
 
